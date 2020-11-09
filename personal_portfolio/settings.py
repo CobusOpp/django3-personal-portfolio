@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '@&x3$w5frfy@zs=93g08#@1t1vjm7*2sw&f@gsw8av2uowaj2p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cobusopp.pythonanywhere.com']
 
 
 # Application definition
@@ -120,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/CobusOpp/django3-personal-portfolio/static/portfolio'
 
-STATIC_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'
+#MEDIA_ROOT = BASE_DIR / 'media'
